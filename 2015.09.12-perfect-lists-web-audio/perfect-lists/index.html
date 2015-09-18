@@ -1,0 +1,522 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+	<title>Идеальные списки</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=792, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css">
+	<style>
+		.slide._example:after {
+			visibility: hidden;
+		}
+		.slide._example>div {
+			width: 1024px;
+			height: 640px;
+			padding: 0;
+		}
+		.example {
+			overflow: hidden;
+		}
+			.example__screen {
+				width: 490px;
+				height: 300px;
+				box-sizing: border-box;
+				float: left;
+				padding: 10px;
+				margin: 10px;
+				border: 10px solid #4884c4;
+			}
+			.example__group {
+				float: left;
+				padding: 10px;
+				margin-left: 10px;
+				overflow: hidden;
+				border: 10px solid #ce0000;
+			}
+			.example__item {
+				width: 50px;
+				height: 50px;
+				background: #ce0000;
+				float: left;
+				margin-left: 10px;
+				margin-top: 20px;
+				opacity: .1;
+			}
+			.example__item:first-child {
+				margin-left: 0;
+			}
+			.example__screen .example__item {
+				opacity: .5;
+			}
+			.example__group .example__item {
+				margin-top: 0;
+				opacity: 1;
+			}
+
+		.example-item {
+			padding: 10px;
+			border: 10px solid;
+		}
+			.example-item__cover {
+				height: 150px;
+			}
+			.example-item__title {
+				height: 20px;
+				margin-top: 10px;
+			}
+	</style>
+</head>
+<body class="list">
+	<header class="caption">
+		<h1>Идеальные списки</h1>
+		<p><a href="http://htmlhero.ru">Андрей Мотошин</a>, <a href="http://interfaced.ru">Interfaced</a></p>
+	</header>
+
+	<section class="slide cover h"><div>
+		<img src="pictures/cover1.gif" alt="">
+	</div></section>
+
+	<section id="cover" class="slide cover h"><div>
+		<img src="pictures/cover2.jpg" alt="">
+		<h2>Идеальные списки</h2>
+		<style>
+			#cover h2 {
+				font-size: 70px;
+				color: #fff;
+				text-shadow: 0 0 25px #000;
+				position: absolute;
+				top: 33px;
+				left: 50px;
+			}
+		</style>
+	</div></section>
+
+	<section class="slide shout grow"><div>
+		<h2>Примеры</h2>
+	</div></section>
+
+	<section class="slide cover w"><div>
+		<img src="pictures/vkcom.png" alt="">
+	</div></section>
+
+	<section class="slide cover w"><div>
+		<img src="pictures/iviru.png" alt="">
+	</div></section>
+
+	<section class="slide cover w"><div>
+		<img src="pictures/persikby-1.jpg" alt="">
+	</div></section>
+
+	<section class="slide cover w"><div>
+		<img src="pictures/persikby-2.jpg" alt="">
+	</div></section>
+
+	<section class="slide cover w"><div>
+		<img src="pictures/persikby-3.jpg" alt="">
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Основные проблемы</h2>
+		<ol>
+			<li><strong>Много данных</strong> в памяти и в DOMе</li>
+			<li>Цикличные списки</li>
+			<li>Многострочные списки</li>
+			<li>Горизонтальная и вертикальная ориентация</li>
+			<li>Скролл-бар для коллекций неизвестного размера</li>
+		</ol>
+	</div></section>
+
+	<section class="slide shout grow"><div>
+		<h2>Много данных</h2>
+	</div></section>
+
+	<section class="slide _example"><div>
+		<div class="example" style="margin: 130px -50px 0 -33px;">
+			<div class="example__item" style="visibility: hidden; margin-top: 135px;"></div>
+			<div class="example__item" style="visibility: hidden; margin-top: 135px;"></div>
+			<div class="example__item" style="visibility: hidden; margin-top: 135px;"></div>
+			<div class="example__item" style="visibility: hidden; margin-top: 135px;"></div>
+			<div class="example__item" style="visibility: hidden; margin-top: 135px;"></div>
+			<div class="example__screen" style="padding-top: 95px;">
+				<div class="example__item" style="visibility: hidden;"></div>
+				<div class="example__item" style="visibility: hidden;"></div>
+				<div class="example__group">
+					<div class="example__item"></div>
+					<div class="example__item"></div>
+					<div class="example__item"></div>
+				</div>
+				<div class="example__item" style="visibility: hidden;"></div>
+				<div class="example__item" style="visibility: hidden;"></div>
+			</div>
+			<div class="example__item" style="visibility: hidden; margin-top: 135px; margin-left: 0;"></div>
+			<div class="example__item" style="visibility: hidden; margin-top: 135px;"></div>
+			<div class="example__item" style="visibility: hidden; margin-top: 135px;"></div>
+			<div class="example__item" style="visibility: hidden; margin-top: 135px;"></div>
+			<div class="example__item" style="visibility: hidden; margin-top: 135px;"></div>
+		</div>
+	</div></section>
+
+	<section class="slide _example"><div>
+		<div class="example" style="margin: 130px -50px 0 -33px;">
+			<div class="example__item" style="visibility: hidden; margin-top: 135px;"></div>
+			<div class="example__item" style="visibility: hidden; margin-top: 135px;"></div>
+			<div class="example__item" style="visibility: hidden; margin-top: 135px;"></div>
+			<div class="example__item" style="visibility: hidden; margin-top: 135px;"></div>
+			<div class="example__item" style="visibility: hidden; margin-top: 135px;"></div>
+			<div class="example__screen" style="padding-top: 95px;">
+				<div class="example__item"></div>
+				<div class="example__item"></div>
+				<div class="example__group">
+					<div class="example__item"></div>
+					<div class="example__item"></div>
+					<div class="example__item"></div>
+				</div>
+				<div class="example__item"></div>
+				<div class="example__item"></div>
+			</div>
+			<div class="example__item" style="visibility: hidden; margin-top: 135px; margin-left: 0;"></div>
+			<div class="example__item" style="visibility: hidden; margin-top: 135px;"></div>
+			<div class="example__item" style="visibility: hidden; margin-top: 135px;"></div>
+			<div class="example__item" style="visibility: hidden; margin-top: 135px;"></div>
+			<div class="example__item" style="visibility: hidden; margin-top: 135px;"></div>
+		</div>
+	</div></section>
+
+	<section class="slide _example"><div>
+		<div class="example" style="margin: 130px -50px 0 -33px;">
+			<div class="example__item" style="margin-top: 135px;"></div>
+			<div class="example__item" style="margin-top: 135px;"></div>
+			<div class="example__item" style="margin-top: 135px;"></div>
+			<div class="example__item" style="margin-top: 135px;"></div>
+			<div class="example__item" style="margin-top: 135px;"></div>
+			<div class="example__screen" style="padding-top: 95px;">
+				<div class="example__item"></div>
+				<div class="example__item"></div>
+				<div class="example__group">
+					<div class="example__item"></div>
+					<div class="example__item"></div>
+					<div class="example__item"></div>
+				</div>
+				<div class="example__item"></div>
+				<div class="example__item"></div>
+			</div>
+			<div class="example__item" style="margin-top: 135px; margin-left: 0;"></div>
+			<div class="example__item" style="margin-top: 135px;"></div>
+			<div class="example__item" style="margin-top: 135px;"></div>
+			<div class="example__item" style="margin-top: 135px;"></div>
+			<div class="example__item" style="margin-top: 135px;"></div>
+		</div>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Решение проблемы</h2>
+		<ol>
+			<li>Разделение данных и отображения</li>
+			<li>Заблаговременная и частичная загрузка</li>
+			<li>Заблаговременный и частичный рендеринг</li>
+			<li>Хитрый рендеринг</li>
+		</ol>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Разделение данных и отображения</h2>
+		<pre><code>var data = new <mark>RemoteList</mark>( &hellip; );
+var list = new List({
+	<mark>source: data</mark>
+});
+</code></pre>
+		<ul>
+			<li><strong>RemoteList</strong> — данные</li>
+			<li><strong>List</strong> — отображение</li>
+		</ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>RemoteList — улучшенный массив</h2>
+		<ol>
+			<li>Агрегирует массив</li>
+			<li>Имеет индекс</li>
+			<li>Имеет события</li>
+			<li>Содержит сахар:
+				<ul>
+					<li><code>current()</code>, <code>currentIndex()</code>, <code>indexOf()</code>, <code>toArray()</code></li>
+					<li><code>select()</code>, <code>selectFirst()</code>, <code>selectNextItem()</code></li>
+				</ul>
+			</li>
+			<li>Не имеет отображения</li>
+		</ol>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Заблаговременная и частичная загрузка</h2>
+		<pre><code>var data = new RemoteList(function(from, to) {
+	return <mark>app.api.getVideos(from, to)</mark>;
+}, {
+	<mark>startFrom: 0,</mark>
+	<mark>bufferSize: 100,</mark>
+	<mark>loadOnLeft: 10,</mark>
+	<mark>frameSize: 50</mark>
+});
+</code></pre>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Заблаговременный и частичный рендеринг</h2>
+		<pre><code>var data = new RemoteList( &hellip; );
+var list = new List({
+	source: data
+}, {
+	<mark>padding: 5</mark>,
+	<mark>renderOnLeft: 2</mark>
+});
+</code></pre>
+	</div></section>
+
+	<section class="slide _example"><div>
+		<div class="example" style="width: 700px; margin: 260px auto 0;">
+			<div class="example__group">
+				<div class="example__item" style="opacity: 1;"></div>
+				<div class="example__item" style="opacity: 1;"></div>
+				<div class="example__item" style="background: #4884c4; opacity: 1;"></div>
+				<div class="example__item" style="background: #4884c4; opacity: 1;"></div>
+				<div class="example__item" style="background: #4884c4; opacity: 1;"></div>
+				<div class="example__item" style="background: #14893f; opacity: 1;"></div>
+				<div class="example__item" style="background: #4884c4; opacity: 1;"></div>
+				<div class="example__item" style="background: #4884c4; opacity: 1;"></div>
+				<div class="example__item" style="background: #4884c4; opacity: 1;"></div>
+				<div class="example__item" style="opacity: 1;"></div>
+				<div class="example__item" style="opacity: 1;"></div>
+			</div>
+		</div>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Хитрый рендеринг</h2>
+		<pre><code>var data = new RemoteList( &hellip; );
+var list = new List({
+	source: data,
+	<mark>renderer: new ListRenderer()</mark>
+});
+</code></pre>
+	</div></section>
+
+	<section class="slide _example"><div>
+		<div class="example-item" style="width: 200px; margin: 170px auto 0; border-color: #ce0000;">
+			<div class="example-item__cover" style="background: #ce0000;"></div>
+			<div class="example-item__title" style="background: #ce0000;"></div>
+			<div class="example-item__title" style="background: #ce0000;"></div>
+		</div>
+	</div></section>
+
+	<section class="slide _example"><div>
+		<div class="example-item" style="width: 200px; margin: 170px auto 0; border-color: #4884c4;">
+			<div class="example-item__cover" style="background: #ce0000;"></div>
+			<div class="example-item__title" style="background: #ce0000;"></div>
+			<div class="example-item__title" style="background: #4884c4;"></div>
+		</div>
+	</div></section>
+
+	<section class="slide shout grow"><div>
+		<h2>Цикличные списки</h2>
+	</div></section>
+
+	<section class="slide _example"><div>
+		<div class="example" style="width: 220px; margin: 260px auto 0;">
+			<div class="example__group">
+				<div class="example__item" style="background: #14893f; opacity: 1;"></div>
+				<div class="example__item" style="opacity: 1;"></div>
+				<div class="example__item" style="opacity: 1;"></div>
+			</div>
+		</div>
+	</div></section>
+
+	<section class="slide _example"><div>
+		<div class="example" style="width: 220px; margin: 260px auto 0;">
+			<div class="example__group">
+				<div class="example__item" style="opacity: 1;"></div>
+				<div class="example__item" style="background: #14893f; opacity: 1;"></div>
+				<div class="example__item" style="opacity: 1;"></div>
+			</div>
+		</div>
+	</div></section>
+
+	<section class="slide _example"><div>
+		<div class="example" style="width: 220px; margin: 260px auto 0;">
+			<div class="example__group">
+				<div class="example__item" style="opacity: 1;"></div>
+				<div class="example__item" style="opacity: 1;"></div>
+				<div class="example__item" style="background: #14893f; opacity: 1;"></div>
+			</div>
+		</div>
+	</div></section>
+
+	<section class="slide _example"><div>
+		<div class="example" style="width: 220px; margin: 260px auto 0;">
+			<div class="example__group">
+				<div class="example__item" style="background: #14893f; opacity: 1;"></div>
+				<div class="example__item" style="opacity: 1;"></div>
+				<div class="example__item" style="opacity: 1;"></div>
+			</div>
+		</div>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Цикличные списки</h2>
+		<pre><code>var data = new <mark>CyclicalList</mark>([
+	'Боевики',
+	'Комедии',
+	'Мелодрамы'
+]);
+var list = new List({
+	<mark>source: data</mark>
+});
+</code></pre>
+	</div></section>
+
+	<section class="slide shout grow"><div>
+		<h2>Многострочные списки</h2>
+	</div></section>
+
+	<section class="slide _example"><div>
+		<div class="example" style="width: 340px; margin: 220px auto 0;">
+			<div class="example__group">
+				<div class="example__item" style="background: #14893f; opacity: 1;"></div>
+				<div class="example__item" style="opacity: 1;"></div>
+				<div class="example__item" style="opacity: 1;"></div>
+				<div class="example__item" style="opacity: 1;"></div>
+				<div class="example__item" style="opacity: 1;"></div>
+				<div class="example__item" style="opacity: 1; margin-top: 10px; margin-left: 0;"></div>
+				<div class="example__item" style="opacity: 1; margin-top: 10px;"></div>
+				<div class="example__item" style="opacity: 1; margin-top: 10px;"></div>
+				<div class="example__item" style="opacity: 1; margin-top: 10px;"></div>
+				<div class="example__item" style="opacity: 1; margin-top: 10px;"></div>
+			</div>
+		</div>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Многострочные списки</h2>
+		<pre><code>var data = new RemoteList( &hellip; );
+var list = new List({
+	source: data
+}, {
+	<mark>lineSize: 2</mark>
+});
+</code></pre>
+	</div></section>
+
+	<section class="slide shout grow"><div>
+		<h2 style="font-size: 120px;">
+			Горизонтальная
+			<br />и вертикальная
+			<br />ориентация</h2>
+	</div></section>
+
+	<section class="slide _example"><div>
+		<div class="example" style="width: 520px; margin: 260px auto 0; position: relative; left: 85px;">
+			<div class="example__group" style="width: 290px;">
+				<div class="example__item" style="background: #14893f; opacity: 1;"></div>
+				<div class="example__item" style="opacity: 1;"></div>
+				<div class="example__item" style="opacity: 1;"></div>
+				<div class="example__item" style="opacity: 1;"></div>
+				<div class="example__item" style="opacity: 1;"></div>
+			</div>
+			<div class="example__item" style="opacity: .5;"></div>
+			<div class="example__item" style="opacity: .5;"></div>
+			<div class="example__item" style="opacity: .5;"></div>
+		</div>
+	</div></section>
+
+	<section class="slide _example"><div>
+		<div class="example" style="width: 350px; margin: 260px auto 0;">
+			<div class="example__group" style="width: 290px;">
+				<div class="example__item" style="background: #14893f; opacity: 1;"></div>
+				<div class="example__item" style="opacity: 1;"></div>
+				<div class="example__item" style="opacity: 1;"></div>
+				<div class="example__item" style="opacity: 1;"></div>
+				<div class="example__item" style="opacity: 1;"></div>
+			</div>
+			<div class="example__item" style="opacity: .5; margin-top: 10px; margin-left: 30px;"></div>
+			<div class="example__item" style="opacity: .5; margin-top: 10px;"></div>
+			<div class="example__item" style="opacity: .5; margin-top: 10px;"></div>
+			<div class="example__item" style="opacity: .5; margin-top: 10px;"></div>
+			<div class="example__item" style="opacity: .5; margin-top: 10px;"></div>
+			<div class="example__item" style="opacity: .5; margin-top: 10px; margin-left: 30px;"></div>
+			<div class="example__item" style="opacity: .5; margin-top: 10px;"></div>
+			<div class="example__item" style="opacity: .5; margin-top: 10px;"></div>
+			<div class="example__item" style="opacity: .5; margin-top: 10px;"></div>
+			<div class="example__item" style="opacity: .5; margin-top: 10px;"></div>
+			<div class="example__item" style="opacity: .5; margin-top: 10px; margin-left: 30px;"></div>
+			<div class="example__item" style="opacity: .5; margin-top: 10px;"></div>
+			<div class="example__item" style="opacity: .5; margin-top: 10px;"></div>
+			<div class="example__item" style="opacity: .5; margin-top: 10px;"></div>
+			<div class="example__item" style="opacity: .5; margin-top: 10px;"></div>
+		</div>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Горизонтальная и вертикальная ориентация</h2>
+		<pre><code>var data = new RemoteList( &hellip; );
+var list = new List({
+	source: data,
+	<mark>isVertical: true</mark>
+});
+</code></pre>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Горизонтальная и вертикальная ориентация</h2>
+		<ol>
+			<li>Один флаг isVertical</li>
+			<li>Универсальный код для обеих ориентаций
+				<ul>
+					<li>Получение width/height</li>
+					<li>Устанавка left/top</li>
+				</ul>
+			</li>
+			<li>Обработка клавиш вверх-вниз/влево-вправо</li>
+			<li>Отображение горизонтальных/вертикальных стрелок</li>
+		</ol>
+	</div></section>
+
+	<section class="slide shout grow"><div>
+		<h2>Скролл-бар</h2>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Скролл-бар</h2>
+		<ol>
+			<li>Слежение за состоянием списка</li>
+			<li>Обновление позиции скролла</li>
+			<li>Обновление размера скролла</li>
+		</ol>
+
+		<h3><strong>Скролл-бар для коллекций неизвестного размера</strong></h3>
+		<ol>
+			<li>Запоминает сколько в сумме было элементов</li>
+			<li>Можно установить количество через <code>setGlobalEnd()</code></li>
+		</ol>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Ссылки по теме</h2>
+		<ul>
+			<li><a href="https://www.npmjs.com/package/zombiebox-extension-ui">npmjs.com/package/zombiebox-extension-ui</a></li>
+			<li><a href="http://rad-js.com/ru/infinite-scroll-opyt-i-oshibki">rad-js.com/ru/infinite-scroll-opyt-i-oshibki</a></li>
+		</ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Идеальные списки</h2>
+		<p>Андрей Мотошин, Interfaced</p>
+		<ul>
+			<li><a href="http://htmlhero.ru">htmlhero.ru</a></li>
+			<li><a href="mailto:andrew@htmlhero.ru">andrew@htmlhero.ru</a></li>
+		</ul>
+	</div></section>
+
+	<div class="progress"><div></div></div>
+	<script src="shower/shower.min.js"></script>
+</body>
+</html>
