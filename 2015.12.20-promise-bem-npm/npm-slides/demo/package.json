@@ -1,0 +1,15 @@
+{
+  "name": "npm-features",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "cd sub-project && npm i"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "shower": "^2.0.3",
+    "shower-markdown": "0.0.7"
+  }
+}

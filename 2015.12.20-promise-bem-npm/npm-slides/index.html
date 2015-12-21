@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>NPM в подробностях</title>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="node_modules/shower-ribbon/styles/screen-16x10.css">
+</head>
+<body class="shower list">
+	<header class="caption">
+		<h1>NPM в подробностях</h1>
+		<p>Вячеслав Зайцев, Interfaced.</p>
+	</header>
+	<section class="slide markdown">
+		## NPM в подробностях
+
+		NPM это не только `npm install`
+	</section>
+	<section class="slide markdown">
+		## npm init
+		### Interactively create a package.json file
+
+		[PromZard](https://www.npmjs.com/package/promzard)
+		`~/.npm-init.js`
+	</section>
+	<section class="slide markdown">
+		## npm install
+
+		### Install a package
+
+		- npm install --save
+		- npm install --save-dev
+		- npm i -S
+		- npm i -D
+	</section>
+	<section class="slide markdown">
+		## npm outdated
+
+		### Check for outdated packages
+
+		<img src="pictures/outdated.png"/>
+	</section>
+	<section class="slide markdown">
+		## npm version
+
+		### Bump a package version
+
+		<img src="pictures/semver.png" alt="SemVer numbers"/>
+
+		- **major**: breaking changes
+		- **minor**: feature add
+		- **patch**: bug fix, docs
+
+		[SemVer](https://www.npmjs.com/package/semver)
+
+	</section>
+	<section class="slide markdown">
+		## npm version
+
+		### Bump a package version
+
+		`npm version prepatch`
+		`npm version patch`
+		`npm version preminor`
+		`npm version minor`
+		`npm version premajor`
+		`npm version major`
+	</section>
+	<section class="slide markdown">
+		## npm shrinkwrap
+
+		### Lock down dependency versions
+
+		Fix for:
+
+		<img src="pictures/versions.png" alt="Versions"/>
+
+		`npm-shrinkwrap.json` - lock packages with dependencies
+
+		`npm-shrinkwrap.json` will be updated on `npm install`
+
+	</section>
+	<section class="slide markdown">
+		## npm pack
+
+		### Create a tarball from a package
+
+	</section>
+	<section class="slide markdown">
+		## node-bin
+
+		### Local NodeJS version per project
+
+		Set [node-bin](https://www.npmjs.com/package/node-bin) as dependency in `package.json`
+
+	</section>
+	<section class="slide markdown">
+		## npm run-script
+
+		### Run arbitrary package scripts
+
+	</section>
+	<section class="slide markdown">
+		## npm run-script
+
+		### Run arbitrary package scripts
+
+		- `npm run` adds `node_modules/.bin` to the `PATH` provided to scripts
+	</section>
+	<section class="slide markdown">
+		## npm run-script
+
+		### Like a shell
+
+		- **&&** for chaining tasks
+		- **&** for running tasks simaltaneously
+		- **<** for inputting the contents (`stdin`) of a file to a command
+		- **>** for redirecting output (`stdout`) of a command and dumping it to a file
+		- **|** for redirecting output (`stdout`) of a command and sending it to another command
+
+		[How to Use npm as a Build Tool](http://blog.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/)
+
+	</section>
+	<section class="slide markdown">
+		## npm run-script
+
+		### Run arbitrary package scripts
+
+		- `npm run` adds `node_modules/.bin` to the `PATH` provided to scripts
+		- Like a shell (**&&**, **&**, **<**, **>**, **|**)
+		- Replace platform depended with node modules (`rm` - **rimraf**, `cat` - **catw**, etc.)
+	</section>
+
+	<section class="slide markdown">
+		## npm run-script
+
+		- [npm-run-all](https://www.npmjs.com/package/npm-run-all) (parallel, scoped tasks: **build:***)
+
+		```
+			"test": "karma start",
+			"pretest": "npm run test:lint",
+			"build": "npm-run-all build:**",
+				"build:js": "webpack",
+				"build:dist": "babel src --out-dir dist"
+		```
+
+	</section>
+	<section class="slide markdown">
+		## npm run-script
+
+		### Run arbitrary package scripts
+
+		- `npm run` adds `node_modules/.bin` to the `PATH` provided to scripts
+		- Like a shell (**&&**, **&**, **<**, **>**, **|**)
+		- Replace platform depended with node modules (`rm` - **rimraf**, `cat` - **catw**, etc.)
+		- [npm-run-all](https://www.npmjs.com/package/npm-run-all) (parallel, scoped tasks: **build:***)
+	</section>
+
+	<section class="slide markdown">
+		## npm run-script
+
+		### Run arbitrary package scripts
+
+		- npm test
+		- npm start
+		- npm restart
+		- npm stop
+		- npm run %NAME%
+		- **pre-**, **post-** hooks
+
+		[More docs](https://docs.npmjs.com/misc/scripts)
+	</section>
+	<section class="slide markdown">
+		## npm run-script
+
+		### Run arbitrary package scripts
+
+		- `npm run` adds `node_modules/.bin` to the `PATH` provided to scripts
+		- Like a shell (**&&**, **&**, **<**, **>**, **|**)
+		- Replace platform depended with node modules (`rm` - **rimraf**, `cat` - **catw**, etc.)
+		- [npm-run-all](https://www.npmjs.com/package/npm-run-all) (parallel, scoped tasks: **build:***)
+		- **pre-**, **post-** hooks
+	</section>
+	<section class="slide markdown">
+		## npm team, npm access
+
+		### Manage organization teams and team memberships
+		### Set access level on published packages
+
+		<img src="pictures/usd_dollar_money_cash.png" alt="Money">
+	</section>
+
+	<section class="slide markdown">
+		## sinopia
+
+		### a private/caching npm repository server
+
+		[Sinopia](https://github.com/rlidwka/sinopia)
+	</section>
+	<section class="slide">
+		<div>
+			<h2>Вопросы</h2>
+
+			<ul>
+				<li>Вячеслав Зайцев</li>
+				<li><a href="mailto:slava@interfaced.ru">slava@interfaced.ru</a></li>
+			</ul>
+		</div>
+	</section>
+	<p class="badge">
+		<span class="author">Вячеслав Зайцев http://interfaced.ru slava@interfaced.ru</span>
+		<style>
+			.author {
+				font-size: 60%;
+			}
+		</style>
+	</p>
+	<!--
+		To hide progress bar from entire presentation
+		just remove “progress” element.
+		-->
+	<div class="progress"></div>
+	<script src="node_modules/shower-core/shower.min.js"></script>
+	<script src="node_modules/shower-markdown/shower-markdown.js"></script>
+</body>
+</html>
